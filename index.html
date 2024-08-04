@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pastelería Dulce Sabor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="pasteleria.css">
+<form action="procesar_formulario.php" method="post" target="_blank">
+  <!-- Tu código de formulario aquí -->
+</form>
+
+</head>
+<body>
+
+<!-- Enlaces (se ubican en la parte superior) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">INICIO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">SOBRE NOSOTROS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">NUESTRO MENÚ</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">CONTACTO</a>
+    </div>
+  </div>
+</div>
+
+<!-- Encabezado con imagen -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Horario de atención: 8am a 6pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-blue" style="font-size: 90px; text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);">Dulce<br>Sabor</span>
+
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">123 Calle del Dulce, 4567</span>
+  </div>
+</header>
+
+<!-- Agregar un color de fondo y texto grande a toda la página -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- Contenedor Acerca De -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SOBRE DULCE SABOR</span></h5>
+    <p>Dulce Sabor es una pastelería que abre sus puertas en el corazón de la ciudad, ofreciendo una experiencia única para los amantes de los postres y los dulces. Fundada con la pasión por la repostería de su propietaria, Estephany, la pastelería se ha convertido en un destino popular para aquellos que buscan deleitar sus sentidos con los sabores más exquisitos.</p>
+    <p>En Dulce Sabor, no solo encontrarás una amplia variedad de pasteles y postres, sino también un ambiente acogedor donde puedes disfrutar de un momento de dulzura y relajación. Nuestro compromiso es hacer que cada visita sea una experiencia memorable para nuestros clientes.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Haz que cada día sea un poco más dulce." En Dulce Sabor, creemos que la felicidad está hecha de pequeños momentos dulces.</i></p>
+      <p>Pastelera y Propietaria: Estephany</p>
+    </div>
+    <img src="/w3images/bakery_interior.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Horario de apertura:</strong> todos los días de 8am a 6pm.</p>
+    <p><strong>Dirección:</strong> 123 Calle del Dulce, 4567, Ciudad del Azúcar</p>
+  </div>
+</div>
+
+<!-- Contenedor Menú -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">NUESTRO MENÚ</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Cakes');" id="myLink">
+        <div class="w3-col s6 tablink">Pasteles</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Bebidas</div>
+      </a>
+    </div>
+
+    <div id="Cakes" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Pastel de Chocolate</h5>
+      <p class="w3-text-grey">Delicioso pastel de chocolate con crema 25.00</p><br>
+    
+      <h5>Tarta de Fresa</h5>
+      <p class="w3-text-grey">Tarta de fresa fresca con crema batida 30.00</p><br>
+    
+      <h5>Pastel de Zanahoria</h5>
+      <p class="w3-text-grey">Pastel de zanahoria con nueces y crema de queso 28.00</p><br>
+    
+      <h5>Tarta de Limón</h5>
+      <p class="w3-text-grey">Tarta de limón refrescante con merengue 32.00</p><br>
+    
+      <h5>Magdalenas Variadas</h5>
+      <p class="w3-text-grey">Assortment de magdalenas de diferentes sabores 20.00</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Café</h5>
+      <p class="w3-text-grey">Café regular 2.50</p><br>
+    
+      <h5>Latte</h5>
+      <p class="w3-text-grey">Latte con leche vaporizada 4.00</p><br>
+    
+      <h5>Té</h5>
+      <p class="w3-text-grey">Selección de tés orgánicos 3.00</p><br>
+    
+      <h5>Zumo de Frutas</h5>
+      <p class="w3-text-grey">Jugo de naranja recién exprimido 3.50</p><br>
+    
+      <h5>Chocolate Caliente</h5>
+      <p class="w3-text-grey">Chocolate caliente con malvaviscos 4.50</p>
+    </div>  
+    <img src="https://proingra.com/wp-content/uploads/2022/03/10-MAR-BRAHMAN-01-2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contenedor Contacto/Zona -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTÁCTANOS</span></h5>
+    <p>¡Encuéntranos en nuestra pastelería y déjate llevar por el delicioso aroma de nuestros productos horneados!</p>
+    <img src="https://portales.vilbo.com/files/uploads/images/articulos/book%20dulcypas%2018/targarona-vitrina-dulcypasbook.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">¡Aviso!</span> Ofrecemos servicios de catering para eventos especiales. ¡Haz tu pedido ahora!</p>
+    <p><strong>Reserva</strong> una mesa, pregunta por nuestras especialidades del día o simplemente envíanos un mensaje:</p>
+    <form action="https://formsubmit.co/23202022@utfv.edu.mx" method="POST">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" name="Nombre" placeholder="Nombre" required></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" name="Numero_de_personas" placeholder="Número de personas" required></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" name="Fecha_y_hora" placeholder="Fecha y hora" required></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" name="Mensaje_Requisitos_especiales" placeholder="Mensaje / Requisitos especiales" required></p>
+      <p><button class="w3-button w3-black" type="submit">ENVIAR MENSAJE</button></p>      <p>
+    </form>
+    
+  </div>
+</div>
+
+<!-- Fin del contenido de la página -->
+</div>
+
+<!-- Pie de página -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+ 
+</footer>
+
+<script src="pasteleria.js"></script>
+<script>
+    // Menú con pestañas
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+    </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+  }
+  
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://buscarcercademi.com/wp-content/uploads/2023/11/Pastelerias-cerca-de-mi-ubicacion.webp"); /* Cambiar la imagen por una relacionada con la pastelería */
+    min-height: 90%;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
